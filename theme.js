@@ -352,7 +352,7 @@
                   }, 100);
                 }
               })["catch"](function (error) {
-                console.log("Autoplay prevented:", error);
+                // console.log("Autoplay prevented:", error);
               });
             }
           } else {

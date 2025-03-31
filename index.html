@@ -21,28 +21,30 @@
       <!-- css -->
       <link rel="stylesheet" href="./animate.css">
       <link rel="stylesheet" type="text/css" href="./phospor-icon.css">
-      <link rel="preload" as="style" href="./bootstrap.css">
-      <link rel="preload" as="style" href="./themes.css?v=3.5">
-      <link rel="stylesheet" href="./bootstrap.css">
-      <link rel="stylesheet" href="./themes.css?v=3.5">
+      <link rel="preload" as="style" href="./bootstrap.css?v=1.1">
+      <link rel="preload" as="style" href="./themes.css?v=2.5">
+      <link rel="stylesheet" href="./bootstrap.css?v=1.1">
+      <link rel="stylesheet" href="./themes.css?v=2.5">
       <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="https://example.com/favicon.ico" type="image/x-icon">
+
     <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap" rel="stylesheet">
       <style>
          @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
          @import url('./brittany.css?v=1.0');
          :root {
-         --inv-bg: #324a6a;
-         --inv-base: #ffffff;
-         --inv-accent: #e4c389;
-         --inv-border: #e4c389;
+         --inv-bg: #3A6941;
+         --inv-base: #3A6941;
+         --inv-accent: #9EB996;
+         --inv-border: #9EB996;
          --font-base: 'Marcellus', serif;
          --font-accent: 'Brittany Signature';
          --font-latin: 'Brittany Signature';
-         --menu-bg: #324a6a;
-         --menu-inactive: #ffffff80;
-         --menu-active: #e4c389;
-         --btn-color: #324a6a;
+         --menu-bg: #3A6941;
+         --menu-inactive: #9EB996;
+         --menu-active: #9EB996;
+         --btn-color: #3A6941;
          }
          .font-latin, .font-accent {
          line-height: 2;
@@ -84,7 +86,7 @@
          <div id="modalOverlay" class="modal-backdrop fade" style="display: none;"></div>
          <div id="loader" class="loader-wrapper" style="display: none;"><span class="loader"><span class="loader-inner"></span></span></div>
          <audio id="music" loop="loop" autoplay="autoplay">
-            <source src="./sound.mp3">
+            <source src="./sound.mp3?v=1.1">
          </audio>
          <div id="workspace-container" class="position-fixed h-100 w-100" style="overflow: hidden;">
             <div id="panZoom" class="position-fixed h-100 w-100" style="inset: 0px; transform-origin: 50% 50%; transform: scale(1.12908) translate(0px, 0px);">
@@ -92,10 +94,10 @@
                   <div class="canvas not-open" style="height: 736px;">
                      <div id="nusi" data-guest="Nama Tamu" data-group="VIP" style="height: 736px; display: block;">
                         <div class="nusi_track">
-                           <ul class="nusi_list">
+                           <ul  class="nusi_list">
                               <li class="nusi_slide nusi_cover" style="">
                                  <div class="container-mobile cover" style="background-image: url('./bg.png');">
-                                    <div class="frame"><img src="./frame-tl.webp" alt="frame" class="frame-tl animate__animated animate__fadeInTopLeft animate__slower"> <img src="./frame-br.webp" alt="frame" class="frame-br animate__animated animate__fadeInBottomRight animate__slower"></div>
+                                    <div class="frame"><img src="./frame-tr.png" alt="frame" class="frame-tr animate__animated animate__fadeInTopRight animate__slower"> <img src="./frame-bl.png" alt="frame" class="frame-bl animate__animated animate__fadeInBottomLeft animate__slower"></div>
                                     <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
                                        <div style="width: 100%;">
                                           <div>
@@ -116,7 +118,7 @@
                               </li>
                               <li class="nusi_slide" style="display: none;">
                                  <div class="container-mobile" style="background-image: url('./bg.png');">
-                                    <div class="frame"><img src="./frame-tl.webp" alt="frame" class="frame-tl animate__animated animate__fadeInTopLeft animate__slower"> <img src="./frame-br.webp" alt="frame" class="frame-br animate__animated animate__fadeInBottomRight animate__slower"></div>
+                                    <div class="frame"><img src="./frame-tr.png" alt="frame" class="frame-tr animate__animated animate__fadeInTopRight animate__slower"> <img src="./frame-bl.png" alt="frame" class="frame-bl animate__animated animate__fadeInBottomLeft animate__slower"></div>
                                     <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
                                        <div style="width: 100%;">
                                         <div style="position: relative;" class="text-left text-dark bg-white rounded p-4 shadow animate__animated animate__fadeInUp animate__slower">
@@ -132,7 +134,7 @@
                               </li>
                               <li class="nusi_slide" style="display: none;">
                                  <div class="container-mobile" style="background-image: url('./bg.png');">
-                                    <div class="frame"><img src="./frame-tl.webp" alt="frame" class="frame-tl animate__animated animate__fadeInTopLeft animate__slower"> <img src="./frame-br.webp" alt="frame" class="frame-br animate__animated animate__fadeInBottomRight animate__slower"></div>
+                                    <div class="frame"><img src="./frame-tr.png" alt="frame" class="frame-tr animate__animated animate__fadeInTopRight animate__slower"> <img src="./frame-bl.png" alt="frame" class="frame-bl animate__animated animate__fadeInBottomLeft animate__slower"></div>
                                     <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
                                        <div style="width: 100%;">
                                           <div class="editable text-center mb-4 animate__animated animate__fadeInDown animate__slower charmonman-regular">Salam sejahtera,<br>Dengan hormat, melalui undangan ini kami bermaksud mengajak <span class="guestNameSlot"></span> untuk berkenan menghadiri acara pernikahan kami:</div>
@@ -150,7 +152,7 @@
                               </li>
                               <li class="nusi_slide" style="display: none;">
                                  <div class="container-mobile" style="background-image: url('./bg.png');">
-                                    <div class="frame"><img src="./frame-tl.webp" alt="frame" class="frame-tl animate__animated animate__fadeInTopLeft animate__slower"> <img src="./frame-br.webp" alt="frame" class="frame-br animate__animated animate__fadeInBottomRight animate__slower"></div>
+                                    <div class="frame"><img src="./frame-tr.png" alt="frame" class="frame-tr animate__animated animate__fadeInTopRight animate__slower"> <img src="./frame-bl.png" alt="frame" class="frame-bl animate__animated animate__fadeInBottomLeft animate__slower"></div>
                                     <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
                                        <div style="width: 100%;">
                                           <div class="text-center mb-3 animate__animated animate__fadeInDown animate__slower">
@@ -185,7 +187,7 @@
                                           <div class="animate__animated animate__fadeInUp animate__slow" style="width: 100%; margin: auto auto 20px; border-radius: 10px; overflow: hidden; padding-bottom: 50%; position: relative;"><iframe width="100%" height="100%" allowfullscreen="allowfullscreen" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.2607775004108!2d100.20097600000129!3d1.7846976751155377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302ce1b1baf9bd1f%3A0x6a53ed2782c95d3e!2sSOPO%20PARULIAN%20CIKAMPAK!5e0!3m2!1sid!2sid!4v1743242959777!5m2!1sid!2sid" class="maps-embed" style="border: 0px; position: absolute;"></iframe></div>
                                           <!-- <button class="btn-maps btn btn-sm btn-pilled btn-block btn-accent mt-1 mb-4">Edit Denah Lokasi</button>  -->
                                           <div class="text-center animate__animated animate__fadeInUp animate__slow">
-                                             <div class="editable mb-3 charmonman-bold" style="font-size:18px">Wisma Parulian Cikampak</div>
+                                             <!-- <div class="editable mb-3 charmonman-bold" style="font-size:18px">Wisma Parulian Cikampak</div> -->
                                              <a href="https://maps.app.goo.gl/vHCejb8Ukc6nG6ce6" target="_blank" rel="noreferrer noopener" class="btn-maps-link btn btn-primary rounded-pill mb-4 animate__animated animate__fadeInUp animate__slow" style="font-size:12px;">Petunjuk Ke Lokasi</a>
                                           </div>
                                        </div>
@@ -194,7 +196,7 @@
                               </li>
                               <!-- <li class="nusi_slide" style="display: none;">
                                  <div class="container-mobile" style="background-image: url('./bg.png');">
-                                    <div class="frame"><img src="./frame-tl.webp" alt="frame" class="frame-tl animate__animated animate__fadeInTopLeft animate__slower"> <img src="./frame-br.webp" alt="frame" class="frame-br animate__animated animate__fadeInBottomRight animate__slower"></div>
+                                    <div class="frame"><img src="./frame-tr.png" alt="frame" class="frame-tr animate__animated animate__fadeInTopRight animate__slower"> <img src="./frame-bl.png" alt="frame" class="frame-bl animate__animated animate__fadeInBottomLeft animate__slower"></div>
                                     <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
                                        <div style="width: 100%;">
                                           <div class="text-center">
@@ -250,7 +252,7 @@
                               </li> -->
                               <li class="nusi_slide" style="display: none;">
                                  <div class="container-mobile" style="background-image: url('./bg.png');">
-                                    <div class="frame"><img src="./frame-tl.webp" alt="frame" class="frame-tl animate__animated animate__fadeInTopLeft animate__slower"> <img src="./frame-br.webp" alt="frame" class="frame-br animate__animated animate__fadeInBottomRight animate__slower"></div>
+                                    <div class="frame"><img src="./frame-tr.png" alt="frame" class="frame-tr animate__animated animate__fadeInTopRight animate__slower"> <img src="./frame-bl.png" alt="frame" class="frame-bl animate__animated animate__fadeInBottomLeft animate__slower"></div>
                                     <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
                                        <div style="width: 100%;">
                                           <div class="text-center mb-4 animate__animated animate__fadeInDown animate__slower">
@@ -265,32 +267,18 @@
                                                 <form class="pt-2">
                                                    <div>
                                                       <div class="form-group mb-2">
-                                                         <label for="inputname" class="small mb-1">Nama</label> <input aria-hidden="false" id="inputname" type="text" placeholder="Nama" required="required" class="form-control"> <!---->
+                                                         <label for="inputname" class="small mb-1">Nama</label> 
+                                                         <input id="inputname" type="text" value="" placeholder="Nama" disabled readonly required="required" class="form-control guestNameSlot"> <!---->
+                                                         <span id="error-name" style="color: rgb(255, 86, 86); font-size: 12px;"></span><br>
                                                       </div>
                                                       <!----> <!----> <!----> <!---->
                                                    </div>
                                                    <!-- <div>
                                                       <div class="form-group mb-2">
-                                                         <label for="inputgroup_name" class="small mb-1">Grup</label> <input aria-hidden="false" id="inputgroup_name" type="text" placeholder="Grup" class="form-control">
+                                                         <label for="inputgroup_name" class="small mb-1">Grup</label> <input id="inputgroup_name" type="text" placeholder="Grup" class="form-control">
                                                       </div>
                                                    </div> -->
-                                                   <div>
-                                                      <!----> <!----> 
-                                                      <div class="form-group mb-2">
-                                                         <label for="inputphone" class="small mb-1">No WhatsApp</label> 
-                                                         <div class="input-group">
-                                                            <div class="input-group-prepend">
-                                                               <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn bg-white border dropdown-toggle">+62</button> 
-                                                               <div class="dropdown-menu shadow">
-                                                                  <span class="dropdown-item"><input type="search" placeholder="Search Country..." class="form-control form-control-sm"></span> <button type="button" class="dropdown-item active">Indonesia +62</button><button type="button" class="dropdown-item">Australia +61</button><button type="button" class="dropdown-item">Austria +43</button> <!---->
-                                                               </div>
-                                                            </div>
-                                                            <input aria-hidden="false" id="inputphone" type="number" required="required" placeholder="No WhatsApp" class="form-control">
-                                                         </div>
-                                                         <!---->
-                                                      </div>
-                                                      <!----> <!---->
-                                                   </div>
+                                                  
                                                    <div>
                                                       <!----> <!----> <!----> 
                                                       <div class="form-group mb-2">
@@ -300,6 +288,7 @@
                                                             <option value="Hadir">Hadir</option>
                                                             <option value="Tidak Hadir">Tidak Hadir</option>
                                                          </select>
+                                                         <span id="error-attendance" style="color: rgb(255, 86, 86); font-size: 12px;"></span><br>
                                                          <!---->
                                                       </div>
                                                       <!---->
@@ -313,10 +302,14 @@
                                                    <!----> <!----><!----><!----><!----><!---->
                                                    <div class="form-group mb-2">
                                                       <label for="inputcomment" class="small mb-1">Komentar atau Ucapan</label> 
-                                                      <textarea id="inputcomment" rows="3" placeholder="Komentar atau Ucapan" required="required" class="form-control"></textarea>
+                                                      <textarea id="inputcomment" rows="3" placeholder="Komentar atau Ucapan" maxlength="100" required="required" class="form-control"></textarea>
+                                                      <div style="display: flex;align-items:center;gap:4px;justify-content:space-between">
+                                                         <span id="error-comment" style="color: rgb(255, 86, 86); font-size: 12px;"></span><br>
+                                                         <span><span id="counter-comment">0</span>/100</span>
+                                                      </div>
                                                       <!---->
                                                    </div>
-                                                   <button type="button" class="btn btn-primary rounded-pill btn-block mt-4 mb-2"><span>Kirim</span></button>
+                                                   <button type="button" onclick="simpanData()" class="btn btn-primary rounded-pill btn-block mt-4 mb-2"><span>Kirim</span></button>
                                                 </form>
                                              </div>
                                           </div>
@@ -326,7 +319,7 @@
                               </li>
                               <li class="nusi_slide" style="display: none;">
                                 <div class="container-mobile" style="background-image: url('./bg.png');">
-                                   <div class="frame"><img src="./frame-tl.webp" alt="frame" class="frame-tl animate__animated animate__fadeInTopLeft animate__slower"> <img src="./frame-br.webp" alt="frame" class="frame-br animate__animated animate__fadeInBottomRight animate__slower"></div>
+                                   <div class="frame"><img src="./frame-tr.png" alt="frame" class="frame-tr animate__animated animate__fadeInTopRight animate__slower"> <img src="./frame-bl.png" alt="frame" class="frame-bl animate__animated animate__fadeInBottomLeft animate__slower"></div>
                                    <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
                                       <div style="width: 100%;">
                                          <div class="text-center mb-4 animate__animated animate__fadeInDown animate__slower">
@@ -335,8 +328,11 @@
                                          <div class="rsvp-placeholder animate__animated animate__fadeInUp animate__slower">
                                             <div class="rsvp-form show">
                                                <!----> 
-                                               <div class="comment py-4">
-                                                  <div class="comment-item">
+                                               <div id="data-list"  class="comment pt-4 pb-2">
+                                                   <div style="text-align: center;">
+                                                      Belum ada ucapan
+                                                   </div>
+                                                  <!-- <div class="comment-item">
                                                      <div class="d-flex">
                                                         <img src="https://ui-avatars.com/api/?size=40&amp;background=random&amp;color=random&amp;name=Nama Tamu" alt="Nama Tamu" loading="lazy" class="avatar rounded-circle" style="height: 20px; width: 20px;"> 
                                                         <div class="ml-2 text-left">
@@ -345,8 +341,8 @@
                                                            <small style="font-size:10px;">28 September 2023 at 23.06</small>
                                                         </div>
                                                      </div>
-                                                  </div>
-                                                  <div class="comment-item">
+                                                  </div> -->
+                                                  <!-- <div class="comment-item">
                                                      <div class="d-flex">
                                                         <img src="https://ui-avatars.com/api/?size=40&amp;background=random&amp;color=random&amp;name=Budi" alt="Budi" loading="lazy" class="avatar rounded-circle" style="height: 20px; width: 20px;"> 
                                                         <div class="ml-2 text-left">
@@ -375,8 +371,21 @@
                                                            <small style="font-size:10px;">27 May 2023 at 04.56</small>
                                                         </div>
                                                      </div>
-                                                  </div>
+                                                  </div> -->
                                                </div>
+                                               <div class="pagination" style="display: flex;align-items:center;justify-content:space-between;">
+                                                   <button style="outline:none;background:none;border:none;display:none;" id="prev-btn" disabled>
+                                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#3A6941" style="width:24px;">
+                                                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z" clip-rule="evenodd" />
+                                                       </svg>                                                                                                            
+                                                   </button>
+                                                   <button style="outline:none;background:none;border:none;display:none;" id="next-btn">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#3A6941" style="width:24px;">
+                                                         <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z" clip-rule="evenodd" />
+                                                       </svg>
+                                                       
+                                                   </button>
+                                                </div>
                                             </div>
                                          </div>
                                       </div>
@@ -385,7 +394,7 @@
                              </li>
                               <li class="nusi_slide" style="display: none;">
                                  <div class="container-mobile" style="background-image: url('./bg.png');">
-                                    <div class="frame"><img src="./frame-tl.webp" alt="frame" class="frame-tl animate__animated animate__fadeInTopLeft animate__slower"> <img src="./frame-br.webp" alt="frame" class="frame-br animate__animated animate__fadeInBottomRight animate__slower"></div>
+                                    <div class="frame"><img src="./frame-tr.png" alt="frame" class="frame-tr animate__animated animate__fadeInTopRight animate__slower"> <img src="./frame-bl.png" alt="frame" class="frame-bl animate__animated animate__fadeInBottomLeft animate__slower"></div>
                                     <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
                                        <div class="text-center" style="width: 100%;">
                                           <div class="font-latin color-accent h4 mb-2 editable animate__animated animate__fadeInDown animate__slower">Kirim Hadiah</div>
@@ -398,9 +407,9 @@
                                                 </div>
                                                 <div style="text-align:left">
                                                   <div class="editable account-number font-weight-bold h5 mb-2" style="dipslay:flex;align-items:center;gap:8px;">
-                                                    <span>12345678</span>
-                                                    <span data-text="1234567890" onclick="copyText(event)" >
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6" style="width:24px;">
+                                                    <span>5520722221</span>
+                                                    <span data-text="5520722221" onclick="copyText(event)" >
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6" style="width:22px;">
                                                             <path d="M7.5 3.375c0-1.036.84-1.875 1.875-1.875h.375a3.75 3.75 0 0 1 3.75 3.75v1.875C13.5 8.161 14.34 9 15.375 9h1.875A3.75 3.75 0 0 1 21 12.75v3.375C21 17.16 20.16 18 19.125 18h-9.75A1.875 1.875 0 0 1 7.5 16.125V3.375Z" />
                                                             <path d="M15 5.25a5.23 5.23 0 0 0-1.279-3.434 9.768 9.768 0 0 1 6.963 6.963A5.23 5.23 0 0 0 17.25 7.5h-1.875A.375.375 0 0 1 15 7.125V5.25ZM4.875 6H6v10.125A3.375 3.375 0 0 0 9.375 19.5H16.5v1.125c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625V7.875C3 6.839 3.84 6 4.875 6Z" />
                                                         </svg>
@@ -416,9 +425,9 @@
                                                 </div>
                                                 <div style="text-align:left">
                                                   <div class="editable account-number font-weight-bold h5 mb-2" style="dipslay:flex;align-items:center;gap:8px;">
-                                                    <span>12345678</span>
-                                                    <span data-text="12345678" onclick="copyText(event)" >
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6" style="width:24px;">
+                                                    <span>1830004693338</span>
+                                                    <span data-text="1830004693338" onclick="copyText(event)" >
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6" style="width:22px;">
                                                             <path d="M7.5 3.375c0-1.036.84-1.875 1.875-1.875h.375a3.75 3.75 0 0 1 3.75 3.75v1.875C13.5 8.161 14.34 9 15.375 9h1.875A3.75 3.75 0 0 1 21 12.75v3.375C21 17.16 20.16 18 19.125 18h-9.75A1.875 1.875 0 0 1 7.5 16.125V3.375Z" />
                                                             <path d="M15 5.25a5.23 5.23 0 0 0-1.279-3.434 9.768 9.768 0 0 1 6.963 6.963A5.23 5.23 0 0 0 17.25 7.5h-1.875A.375.375 0 0 1 15 7.125V5.25ZM4.875 6H6v10.125A3.375 3.375 0 0 0 9.375 19.5H16.5v1.125c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625V7.875C3 6.839 3.84 6 4.875 6Z" />
                                                         </svg>
@@ -435,9 +444,9 @@
                                                 </div>
                                                 <div style="text-align:left">
                                                   <div class="editable account-number font-weight-bold h5 mb-2" style="dipslay:flex;align-items:center;gap:8px;">
-                                                    <span>12345678</span>
-                                                    <span data-text="12345678" onclick="copyText(event)" >
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6" style="width:24px;">
+                                                    <span>7430 0100 6506 539</span>
+                                                    <span data-text="743001006506539" onclick="copyText(event)" >
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6" style="width:22px;">
                                                             <path d="M7.5 3.375c0-1.036.84-1.875 1.875-1.875h.375a3.75 3.75 0 0 1 3.75 3.75v1.875C13.5 8.161 14.34 9 15.375 9h1.875A3.75 3.75 0 0 1 21 12.75v3.375C21 17.16 20.16 18 19.125 18h-9.75A1.875 1.875 0 0 1 7.5 16.125V3.375Z" />
                                                             <path d="M15 5.25a5.23 5.23 0 0 0-1.279-3.434 9.768 9.768 0 0 1 6.963 6.963A5.23 5.23 0 0 0 17.25 7.5h-1.875A.375.375 0 0 1 15 7.125V5.25ZM4.875 6H6v10.125A3.375 3.375 0 0 0 9.375 19.5H16.5v1.125c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625V7.875C3 6.839 3.84 6 4.875 6Z" />
                                                         </svg>
@@ -461,7 +470,7 @@
                               </li>
                               <li class="nusi_slide" style="display: none;">
                                  <div class="container-mobile" style="background-image: url('./bg.png');">
-                                    <div class="frame"><img src="./frame-tl.webp" alt="frame" class="frame-tl animate__animated animate__fadeInTopLeft animate__slower"> <img src="./frame-br.webp" alt="frame" class="frame-br animate__animated animate__fadeInBottomRight animate__slower"></div>
+                                    <div class="frame"><img src="./frame-tr.png" alt="frame" class="frame-tr animate__animated animate__fadeInTopRight animate__slower"> <img src="./frame-bl.png" alt="frame" class="frame-bl animate__animated animate__fadeInBottomLeft animate__slower"></div>
                                     <div class="watermark d-flex justify-content-center align-items-center" style="height: 100%;">
                                        <div>
                                           <div class="text-center charmonman-regular">
@@ -639,8 +648,8 @@
       </div>
       <!-- not support modal -->
       <!-- start script -->
-      <script src="./theme-app.js?v=20248" type="text/javascript"></script>
-      <script src="./theme.js?v=20248" type="text/javascript"></script>
+      <script src="./theme-app.js?v=20247" type="text/javascript"></script>
+      <script src="./theme.js?v=20247" type="text/javascript"></script>
       <script type="text/javascript">
          var notSupport = document.getElementById('notSupport');
          function checkBrowser() { 
@@ -673,10 +682,24 @@
                 const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-                document.getElementById("days").textContent = days.toString().padStart(2, '0');
-                document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
-                document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
-                document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
+                const elDays = document.getElementById("days");
+                const elHours = document.getElementById("hours");
+                const elMinutes = document.getElementById("minutes");
+                const elSeconds = document.getElementById("seconds");
+
+
+
+                if(elDays)
+                elDays.innerText = days.toString().padStart(2, '0');
+
+                if(elHours)
+                elHours.innerText = hours.toString().padStart(2, '0');
+
+                if(elMinutes)
+                elMinutes.innerText = minutes.toString().padStart(2, '0');
+
+                if(elSeconds)
+                elSeconds.innerText = seconds.toString().padStart(2, '0');
             }
         
             updateCountdown();
@@ -699,15 +722,203 @@
 
             // Tampilkan nama tamu jika ada
             const guestNameSlot = document.querySelectorAll(".guestNameSlot");
+
             if (guestName) {
                 guestNameSlot.forEach((el) => {
                     el.textContent = decodeURIComponent(guestName);
                 });
+
+                const inputname = document.getElementById("inputname");
+                inputname.value += decodeURIComponent(guestName);
             } else {
                 guestNameSlot.forEach((el) => {
                     el.textContent = 'Tamu Undangan';
                 });
             } 
         </script>
+
+        <script type="module">
+         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js";
+         import { getDatabase, ref, query, orderByChild, orderByKey, startAt, limitToFirst, limitToLast, onValue,  startAfter, endBefore, get  } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-database.js";
+         import { serverTimestamp } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-database.js";
+
+         // Initialize Firebase
+         const app = initializeApp(configFb());
+         
+         const db = getDatabase();
+         const dataList = document.getElementById("data-list");
+         const prevBtn = document.getElementById("prev-btn");
+         const nextBtn = document.getElementById("next-btn");
+
+         let allData = [];  // Semua data disimpan di sini
+         let currentPage = 1;
+         const itemsPerPage = 4;
+
+         // 🔹 Ambil semua data dari Firebase
+         window.fetchData = function() {
+            onValue(ref(db, "users"), (snapshot) => {
+               if (snapshot.exists()) {
+                     allData = [];
+                     snapshot.forEach((childSnapshot) => {
+                        let data = childSnapshot.val();
+                        allData.push(data);
+                     });
+
+                     // 🔹 Urutkan berdasarkan timestamp terbaru di atas
+                     allData.sort((a, b) => b.timestamp - a.timestamp);
+
+                     // 🔹 Tampilkan halaman pertama
+                     currentPage = 1;
+                     displayData();
+
+                     if(snapshot.size > 4) {
+                        prevBtn.style.display = 'block';
+                        nextBtn.style.display = 'block';
+                     }
+               } else {
+                     prevBtn.style.display = 'none';
+                     nextBtn.style.display = 'none';
+                     dataList.innerHTML = "<p style='text-align:center;'>Belum ada Ucapan & Doa</p>";
+               }
+            });
+         }
+
+         // 🔹 Tampilkan data per halaman
+         function displayData() {
+            dataList.innerHTML = "";
+
+            let start = (currentPage - 1) * itemsPerPage;
+            let end = start + itemsPerPage;
+            let pageData = allData.slice(start, end);
+
+            pageData.forEach((data) => {
+               dataList.insertAdjacentHTML("beforeend", `
+                     <div class="comment-item">
+                        <div class="d-flex">
+                           <img src="https://ui-avatars.com/api/?size=40&background=random&color=random&name=${data.nama}" 
+                                 alt="${data.nama}" loading="lazy" 
+                                 class="avatar rounded-circle" 
+                                 style="height: 20px; width: 20px;"> 
+                           <div class="ml-2 text-left">
+                                 <p class="mb-0 font-weight-bold" style="font-size:12px">
+                                    ${data.nama} 
+                                    <span class="badge alert-info">${data.kehadiran}</span>
+                                 </p>
+                                 <p class="mb-0" style="font-size:12px">${data.comment}</p>
+                                 <small style="font-size:10px;">${formatTimestamp(data.timestamp)}</small>
+                           </div>
+                        </div>
+                     </div>
+               `);
+            });
+
+            updateButtons();
+         }
+
+         // 🔹 Update tombol prev/next
+         function updateButtons() {
+            prevBtn.disabled = currentPage === 1;
+            nextBtn.disabled = currentPage * itemsPerPage >= allData.length;
+         }
+
+         // 🔹 Navigasi Prev & Next
+         prevBtn.addEventListener("click", () => {
+            if (currentPage > 1) {
+               currentPage--;
+               displayData();
+            }
+         });
+
+         nextBtn.addEventListener("click", () => {
+            if (currentPage * itemsPerPage < allData.length) {
+               currentPage++;
+               displayData();
+            }
+         });
+
+         // 🔹 Load Data Pertama Kali
+         fetchData();
+        </script>
+
+        <script type="module">
+         // Import the functions you need from the SDKs you need
+         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js";
+         import { getDatabase, ref, push, set, query, orderByKey, startAt, limitToFirst, onValue  } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-database.js";
+         import { serverTimestamp } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-database.js";
+
+         // Initialize Firebase
+         const app = initializeApp(configFb());
+         const db = getDatabase(app);
+
+          // ✅ Fungsi Simpan Data ke Firebase
+         window.simpanData = function () {
+            const nama = document.getElementById("inputname").value;
+            const comment = document.getElementById("inputcomment").value;
+            const kehadiran = document.getElementById("inputattendance").value;
+
+            const errorName = document.getElementById("error-name");
+            const errorComment = document.getElementById("error-comment");
+            const errorAttendance = document.getElementById("error-attendance");
+
+            // Kosongkan pesan error sebelum validasi
+            errorName.textContent = "";
+            errorComment.textContent = "";
+            errorAttendance.textContent = "";
+
+            let isValid = true;
+
+            if (!nama) {
+               errorName.textContent = "Mohon diisi!";
+               isValid = false;
+            } else if (nama.length > 40) {
+               errorName.textContent = "Maksimal 40 karakter!";
+               isValid = false;
+            }
+
+            if (!kehadiran) {
+               errorAttendance.textContent = "Mohon dipilih!";
+               isValid = false;
+            }
+            
+            if (!comment) {
+               errorComment.textContent = "Mohon diisi!";
+               isValid = false;
+            } else if (comment.length < 2) {
+               errorComment.textContent = "Minimal 2 karakter!";
+               isValid = false;
+            } else if (comment.length > 100) {
+               errorComment.textContent = "Maksimal 100 karakter!";
+               isValid = false;
+            }
+
+            if (!isValid) return; // Stop jika ada error
+
+            // 🔹 Gunakan push agar data punya ID unik
+            const dataRef = push(ref(db, "users/"));
+            set(dataRef, { nama, kehadiran, comment, timestamp: serverTimestamp() })
+               .then(() => {
+                  document.getElementById("inputcomment").value = "";
+                  document.getElementById("inputattendance").value = "";
+                  document.getElementById("inputcomment").innerText = 0;
+                  document.getElementById('counter-comment').innerText = 0;
+                  window.fetchData();
+               })
+               .catch(err => alert("Gagal menyimpan data: " + err));
+         };
+
+        </script>
+
+        <script>
+         function formatTimestamp(e){const i=new Date(e);return i.toLocaleDateString("id-ID",{day:"2-digit",month:"short",year:"numeric"})+", "+i.toLocaleTimeString("id-ID",{hour:"2-digit",minute:"2-digit",hour12:!1})}function configFb(){return{apiKey:"AIzaSyB7Is-83og1NuNCoMIWMmlUhg8f0TKzSNw",authDomain:"wedding-adinusi.firebaseapp.com",databaseURL:"https://wedding-adinusi-default-rtdb.firebaseio.com",projectId:"wedding-adinusi",storageBucket:"wedding-adinusi.firebasestorage.app",messagingSenderId:"897760446958",appId:"1:897760446958:web:bf34a631311f9c2c9866ff",measurementId:"G-WWWMCZ3ZQ5"}}
+        </script>
+
+         <script>
+            document.getElementById("inputcomment").addEventListener("input", function() {
+               let comment = this.value;
+               let counter = document.getElementById("counter-comment");
+
+               counter.textContent = comment.length;
+            });
+         </script>
    </body>
 </html>
