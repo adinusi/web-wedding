@@ -9,12 +9,12 @@
       <title>Wedding  - Adytia Nugraha Siregar</title>
       <meta name="title" content="Wedding  - Adytia Nugraha Siregar">
       <meta name="description" content="Undangan digital modern untuk pernikahan Adytia Nugraha Siregar biru simple dan acara spesial lainnya. Gratis coba dulu, bayar belakangan!">
-      <meta itemprop="image" content="./bg.png?v=1.1">
+      <meta itemprop="image" content="./bg.png?v=1.2">
       <!-- Open Graph / Facebook -->
       <meta property="og:type" content="website">
       <meta property="og:title" content="Wedding  - Adytia Nugraha Siregar">
       <meta property="og:description" content="Undangan digital modern untuk pernikahan Adytia Nugraha Siregar biru simple dan acara spesial lainnya. Gratis coba dulu, bayar belakangan!">
-      <meta property="og:image" content="./bg.png?v=1.1">
+      <meta property="og:image" content="./bg.png?v=1.2">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 
@@ -53,6 +53,68 @@
          .font-latin, .font-accent {
          line-height: 2;
          }
+      </style>
+      <style>
+         .book {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            perspective: 1500px; /* Efek 3D */
+        }
+        
+        .page {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: white;
+            border: 1px solid #ccc;
+            padding:40px 20px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            transform-origin: left;
+            transition: transform 1s ease-in-out;
+        }
+        
+        .page:nth-child(1) { z-index: 3; }
+        .page:nth-child(2) { z-index: 2; }
+        .page:nth-child(3) { z-index: 1; }
+        
+        .flipped {
+            transform: rotateY(-360deg);
+            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .flipped-back {
+         transform: rotateY(360deg);
+         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+     }
+        
+        .button {
+            position: absolute;
+            bottom: 20px;
+            cursor: pointer;
+            width:24px;
+            height: 24px;;
+            background: #9EB996;
+            color: #3A6941;
+            border: none;
+            font-size: 14px;
+            border-radius: 50%;;
+        }
+        .prev { top:40%;left: 5px;width:max-content;height: max-content;padding:10px; }
+        .next { top:40%;right: 5px;width:max-content;height: max-content;padding:10px; }
+      </style>
+      <style>
+         .img-cont {
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            transition: transform 1s ease-in-out;
+        }
+
+        @keyframes scrollUp {
+            0% { transform: translateY(0%); }
+            100% { transform: translateY(-100%); }
+      }
       </style>
       <style>
          @import url('./brittany.css?v=1.0');
@@ -100,7 +162,7 @@
                         <div class="nusi_track">
                            <ul  class="nusi_list">
                               <li class="nusi_slide nusi_cover" style="">
-                                 <div class="container-mobile cover" style="background-image: url('./bg.png?v=1.1');">
+                                 <div class="container-mobile cover" style="background-image: url('./bg.png?v=1.2');">
                                     <div class="frame"><img src="./frame-tr.png" alt="frame" class="frame-tr animate__animated animate__fadeInTopRight animate__slower"> <img src="./frame-bl.png" alt="frame" class="frame-bl animate__animated animate__fadeInBottomLeft animate__slower"></div>
                                     <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
                                        <div style="width: 100%;">
@@ -113,7 +175,7 @@
                                              <div class="text-center">
                                                 <div class="editable mb-4 animate__animated animate__fadeInUp animate__slower charmonman-bold">Kepada Yth</div>
                                                 <div id="guestNameSlot" class="guestNameSlot editable color-accent h5 font-weight-bold mb-4 animate__animated animate__fadeInUp animate__slower">Nama Tamu</div>
-                                                <button class="btn-open-invitation btn btn-primary rounded-pill mb-4 animate__animated animate__fadeInUp animate__slow" style="font-size:12px;">Open Invitation</button>
+                                                <button class="btn-open-invitation btn btn-primary rounded-pill mb-4 animate__animated animate__fadeInUp animate__slow" style="font-size:12px;">Buka Undangan</button>
                                              </div>
                                           </div>
                                        </div>
@@ -121,7 +183,7 @@
                                  </div>
                               </li>
                               <li class="nusi_slide" style="display: none;">
-                                 <div class="container-mobile" style="background-image: url('./bg.png?v=1.1');">
+                                 <div class="container-mobile" style="background-image: url('./bg.png?v=1.2');">
                                     <div class="frame"><img src="./frame-tr.png" alt="frame" class="frame-tr animate__animated animate__fadeInTopRight animate__slower"> <img src="./frame-bl.png" alt="frame" class="frame-bl animate__animated animate__fadeInBottomLeft animate__slower"></div>
                                     <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
                                        <div style="width: 100%;">
@@ -137,7 +199,38 @@
                                  </div>
                               </li>
                               <li class="nusi_slide" style="display: none;">
-                                 <div class="container-mobile" style="background-image: url('./bg.png?v=1.1');">
+                                 <div class="container-mobile" style="background-image: url('./bg.png?v=1.2');">
+                                    <div class="frame"><img src="./frame-tr.png" alt="frame" style="z-index:9999"  class="frame-tr animate__animated animate__fadeInTopRight animate__slower"> <img src="./frame-bl.png" style="z-index:9999"  alt="frame" class="frame-bl animate__animated animate__fadeInBottomLeft animate__slower"></div>
+                                    <div class="book">
+                                       <div class="page" data-attr="1" id="page1">
+                                          <h4 class="font-latin text-center mb-4">Maret 2024</h4>
+                                          <p class="charmonman-regular">Cerita nya begini</p>
+                                       </div>
+                                       <div class="page" data-attr="2" id="page2">
+                                          <h4 class="font-latin text-center mb-4">Juni 2024</h4>
+                                          <p class="charmonman-regular">Cerita nya begini</p>
+                                       </div>
+                                       <div class="page" data-attr="3" id="page3">
+                                          <h4 class="font-latin text-center mb-4">January 2025</h4>
+                                          <p class="charmonman-regular">Cerita nya begini</p>
+                                       </div>
+                                   </div>
+                                   <button class="btn-story button prev" id="prev-story">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#3A6941"  width="20px" height="20px">
+                                       <path opacity=".4" fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z" clip-rule="evenodd" />
+                                     </svg>                                     
+                                   </button>
+                                   <button class="btn-story button next" id="next-story">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#3A6941" width="20px" height="20px">
+                                       <path opacity=".4" fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z" clip-rule="evenodd" />
+                                     </svg>
+                                     
+                                   </button>
+                               
+                                 </div>
+                              </li>
+                              <li class="nusi_slide" style="display: none;">
+                                 <div class="container-mobile" style="background-image: url('./bg.png?v=1.2');">
                                     <div class="frame"><img src="./frame-tr.png" alt="frame" class="frame-tr animate__animated animate__fadeInTopRight animate__slower"> <img src="./frame-bl.png" alt="frame" class="frame-bl animate__animated animate__fadeInBottomLeft animate__slower"></div>
                                     <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
                                        <div style="width: 100%;">
@@ -154,8 +247,36 @@
                                     </div>
                                  </div>
                               </li>
+
                               <li class="nusi_slide" style="display: none;">
-                                 <div class="container-mobile" style="background-image: url('./bg.png?v=1.1');">
+                                 <div class="container-mobile" style="background-image: url('./bg.png?v=1.2');">
+                                    <div class="frame"><img src="./frame-tr.png" alt="frame" style="z-index:9999" class="frame-tr animate__animated animate__fadeInTopRight animate__slower"> <img src="./frame-bl.png" alt="frame" style="z-index:9999" class="frame-bl animate__animated animate__fadeInBottomLeft animate__slower"></div>
+                                    <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
+                                       <div style="width: 100%;">
+                                        <div style="position: relative;" class="text-left text-dark bg-white rounded p-4 shadow ">
+                                            <div style="">
+                                             <div class="album">
+                                                <div class="responsive-container-block bg">
+                                                  <div id="img-cont" class="responsive-container-block img-cont">
+                                                    <img class="img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/PP5.4.svg">
+                                                    <img class="img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/PP5.5.svg">
+                                                    <img class="img img-last" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/PP5.6.svg">
+                                                    <img class="img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/PP5.7.svg">
+                                                    <img class="img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/PP5.8.svg">
+                                                    <img class="img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/PP5.9.svg">
+                                                    <img class="img img-big" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/PP5.11.svg">
+                                                    <img class="img img-big img-last" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/PP5.10.svg">
+                                                  </div>
+                                                </div>
+                                              </div>
+                                          </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li class="nusi_slide" style="display: none;">
+                                 <div class="container-mobile" style="background-image: url('./bg.png?v=1.2');">
                                     <div class="frame"><img src="./frame-tr.png" alt="frame" class="frame-tr animate__animated animate__fadeInTopRight animate__slower"> <img src="./frame-bl.png" alt="frame" class="frame-bl animate__animated animate__fadeInBottomLeft animate__slower"></div>
                                     <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
                                        <div style="width: 100%;">
@@ -199,7 +320,7 @@
                                  </div>
                               </li>
                               <!-- <li class="nusi_slide" style="display: none;">
-                                 <div class="container-mobile" style="background-image: url('./bg.png?v=1.1');">
+                                 <div class="container-mobile" style="background-image: url('./bg.png?v=1.2');">
                                     <div class="frame"><img src="./frame-tr.png" alt="frame" class="frame-tr animate__animated animate__fadeInTopRight animate__slower"> <img src="./frame-bl.png" alt="frame" class="frame-bl animate__animated animate__fadeInBottomLeft animate__slower"></div>
                                     <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
                                        <div style="width: 100%;">
@@ -255,7 +376,7 @@
                                  </div>
                               </li> -->
                               <li class="nusi_slide" style="display: none;">
-                                 <div class="container-mobile" style="background-image: url('./bg.png?v=1.1');">
+                                 <div class="container-mobile" style="background-image: url('./bg.png?v=1.2');">
                                     <div class="frame"><img src="./frame-tr.png" alt="frame" class="frame-tr animate__animated animate__fadeInTopRight animate__slower"> <img src="./frame-bl.png" alt="frame" class="frame-bl animate__animated animate__fadeInBottomLeft animate__slower"></div>
                                     <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
                                        <div style="width: 100%;">
@@ -322,7 +443,7 @@
                                  </div>
                               </li>
                               <li class="nusi_slide" style="display: none;">
-                                <div class="container-mobile" style="background-image: url('./bg.png?v=1.1');">
+                                <div class="container-mobile" style="background-image: url('./bg.png?v=1.2');">
                                    <div class="frame"><img src="./frame-tr.png" alt="frame" class="frame-tr animate__animated animate__fadeInTopRight animate__slower"> <img src="./frame-bl.png" alt="frame" class="frame-bl animate__animated animate__fadeInBottomLeft animate__slower"></div>
                                    <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
                                       <div style="width: 100%;">
@@ -397,7 +518,7 @@
                                 </div>
                              </li>
                               <li class="nusi_slide" style="display: none;">
-                                 <div class="container-mobile" style="background-image: url('./bg.png?v=1.1');">
+                                 <div class="container-mobile" style="background-image: url('./bg.png?v=1.2');">
                                     <div class="frame"><img src="./frame-tr.png" alt="frame" class="frame-tr animate__animated animate__fadeInTopRight animate__slower"> <img src="./frame-bl.png" alt="frame" class="frame-bl animate__animated animate__fadeInBottomLeft animate__slower"></div>
                                     <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
                                        <div class="text-center" style="width: 100%;">
@@ -473,7 +594,61 @@
                                  </div>
                               </li>
                               <li class="nusi_slide" style="display: none;">
-                                 <div class="container-mobile" style="background-image: url('./bg.png?v=1.1');">
+                                 <div class="container-mobile" style="background-image: url('./bg.png?v=1.2');">
+                                    <div class="frame"><img src="./frame-tr.png" alt="frame" class="frame-tr animate__animated animate__fadeInTopRight animate__slower"> <img src="./frame-bl.png" alt="frame" class="frame-bl animate__animated animate__fadeInBottomLeft animate__slower"></div>
+                                    <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
+                                       <div style="width: 100%;">
+                                          <div class="text-center mb-4 animate__animated animate__fadeInDown animate__slower">
+                                             <div class="font-latin color-accent h4 editable">Konfirmasi Gift</div>
+                                          </div>
+                                          <div class="rsvp-placeholder animate__animated animate__fadeInUp animate__slower">
+                                             <div class="rsvp-form show">
+                                                <!----> 
+                                                <div class="mb-4">
+                                                   <div class="font-accent h4 text-center">RSVP</div>
+                                                </div>
+                                                <form class="pt-2">
+                                                   <div>
+                                                      <div class="form-group mb-2">
+                                                         <label for="confirmname" class="small mb-1">Nama</label> 
+                                                         <input id="confirmname" type="text" value="" placeholder="Nama" required="required" class="form-control guestNameSlot"> <!---->
+                                                         <span id="error-confirmname" style="color: rgb(255, 86, 86); font-size: 12px;"></span><br>
+                                                      </div>
+                                                   </div>
+                                                
+                                                   <div>
+                                                      <!----> <!----> <!----> 
+                                                      <div class="form-group mb-2">
+                                                         <label for="confirmvia" class="small mb-1">Via</label> 
+                                                         <select id="confirmvia" required="required" class="form-control">
+                                                            <option selected="selected" value="">Pilih Gift</option>
+                                                            <option value="bca">BCA - Adytia Nugraha Siregar</option>
+                                                            <option value="mandiri">Mandiri - Adytia Nugraha Siregar</option>
+                                                            <option value="bri">BRI - Mawar Alvionita Juliati Purba</option>
+                                                            <option value="alamat">Alamat Tujuan</option>
+                                                         </select>
+                                                         <span id="error-confirmvia" style="color: rgb(255, 86, 86); font-size: 12px;"></span><br>
+                                                         <!---->
+                                                      </div>
+                                                      <!---->
+                                                   </div>
+                                                   <div>
+                                                      <div class="form-group mb-2">
+                                                         <label for="confirmnominal" class="small mb-1">Nominal/Barang</label> 
+                                                         <input id="confirmnominal" type="text" value="" placeholder="Nominal/Barang"  class="form-control"> <!---->
+                                                         <span id="error-confirmnominal" style="color: rgb(255, 86, 86); font-size: 12px;"></span><br>
+                                                      </div>
+                                                   </div>
+                                                   <button type="button" onclick="confirmation()" class="btn btn-primary rounded-pill btn-block mt-4 mb-2"><span>Kirim</span></button>
+                                                </form>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li class="nusi_slide" style="display: none;">
+                                 <div class="container-mobile" style="background-image: url('./bg.png?v=1.2');">
                                     <div class="frame"><img src="./frame-tr.png" alt="frame" class="frame-tr animate__animated animate__fadeInTopRight animate__slower"> <img src="./frame-bl.png" alt="frame" class="frame-bl animate__animated animate__fadeInBottomLeft animate__slower"></div>
                                     <div class="watermark d-flex justify-content-center align-items-center" style="height: 100%;">
                                        <div>
@@ -513,11 +688,23 @@
                               <span>Quotes</span>
                            </li>
                            <li class="nusi_menu_item" style="max-width: 82.8px;">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                                 <path fill="currentColor" d="M11.25 4.533A9.707 9.707 0 0 0 6 3a9.735 9.735 0 0 0-3.25.555.75.75 0 0 0-.5.707v14.25a.75.75 0 0 0 1 .707A8.237 8.237 0 0 1 6 18.75c1.995 0 3.823.707 5.25 1.886V4.533ZM12.75 20.636A8.214 8.214 0 0 1 18 18.75c.966 0 1.89.166 2.75.47a.75.75 0 0 0 1-.708V4.262a.75.75 0 0 0-.5-.707A9.735 9.735 0 0 0 18 3a9.707 9.707 0 0 0-5.25 1.533v16.103Z" />
+                               </svg>
+                              <span>Story</span>
+                           </li>
+                           <li class="nusi_menu_item" style="max-width: 82.8px;">
                               <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                  <path opacity=".4" d="M11.776 21.837a36.258 36.258 0 0 1-6.328-4.957 12.668 12.668 0 0 1-3.03-4.805C1.278 8.535 2.603 4.49 6.3 3.288A6.282 6.282 0 0 1 12.007 4.3a6.291 6.291 0 0 1 5.706-1.012c3.697 1.201 5.03 5.247 3.893 8.787a12.67 12.67 0 0 1-3.013 4.805 36.58 36.58 0 0 1-6.328 4.957l-.25.163-.24-.163Z" fill="currentColor"></path>
                                  <path d="m12.01 22-.234-.163a36.316 36.316 0 0 1-6.337-4.957 12.667 12.667 0 0 1-3.048-4.805c-1.13-3.54.195-7.586 3.892-8.787a6.296 6.296 0 0 1 5.728 1.023V22ZM18.23 10a.719.719 0 0 1-.517-.278.818.818 0 0 1-.167-.592c.022-.702-.378-1.341-.994-1.59-.391-.107-.628-.53-.53-.948.093-.41.477-.666.864-.573a.384.384 0 0 1 .138.052c1.236.476 2.036 1.755 1.973 3.155a.808.808 0 0 1-.23.56.708.708 0 0 1-.537.213Z" fill="currentColor"></path>
                               </svg>
                               <span>Mempelai</span>
+                           </li>
+                           <li class="nusi_menu_item" style="max-width: 82.8px;">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+                                 <path fill-rule="evenodd" fill="currentColor" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18V6ZM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0L3 16.061Zm10.125-7.81a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Z" clip-rule="evenodd" />
+                              </svg>                               
+                              <span>Galeri</span>
                            </li>
                            <li class="nusi_menu_item" style="max-width: 82.8px;">
                               <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -553,6 +740,13 @@
                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.08 6.65v.01a.78.78 0 0 0 0 1.56h2.989c.431 0 .781-.35.781-.791a.781.781 0 0 0-.781-.779H8.08Zm7.84 6.09H8.08a.78.78 0 0 1 0-1.561h7.84a.781.781 0 0 1 0 1.561Zm0 4.57H8.08c-.3.04-.59-.11-.75-.36a.795.795 0 0 1 .75-1.21h7.84c.399.04.7.38.7.79 0 .399-.301.74-.7.78Z" fill="currentColor"></path>
                               </svg>
                               <span>Gift</span>
+                           </li>
+                           <li class="nusi_menu_item" style="max-width: 82.8px;">
+                              <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="none" width="24" height="24">
+                                 <path opacity=".4" fill="currentColor"  d="M9.375 3a1.875 1.875 0 0 0 0 3.75h1.875v4.5H3.375A1.875 1.875 0 0 1 1.5 9.375v-.75c0-1.036.84-1.875 1.875-1.875h3.193A3.375 3.375 0 0 1 12 2.753a3.375 3.375 0 0 1 5.432 3.997h3.943c1.035 0 1.875.84 1.875 1.875v.75c0 1.036-.84 1.875-1.875 1.875H12.75v-4.5h1.875a1.875 1.875 0 1 0-1.875-1.875V6.75h-1.5V4.875C11.25 3.839 10.41 3 9.375 3ZM11.25 12.75H3v6.75a2.25 2.25 0 0 0 2.25 2.25h6v-9ZM12.75 12.75v9h6.75a2.25 2.25 0 0 0 2.25-2.25v-6.75h-9Z" />
+                               </svg>                                                        
+
+                              <span>Konfirmasi</span>
                            </li>
                            <li class="nusi_menu_item" style="max-width: 82.8px;">
                               <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -910,6 +1104,53 @@
                .catch(err => alert("Gagal menyimpan data: " + err));
          };
 
+         window.confirmation = function () {
+            const nama = document.getElementById("confirmname").value;
+            const via = document.getElementById("confirmvia").value;
+            const nominal = document.getElementById("confirmnominal").value;
+
+            const errorName = document.getElementById("error-confirmname");
+            const errorVia = document.getElementById("error-confirmvia");
+            const errorNominal = document.getElementById("error-confirmnominal");
+
+            // Kosongkan pesan error sebelum validasi
+            errorName.textContent = "";
+            errorVia.textContent = "";
+            errorNominal.textContent = "";
+
+            let isValid = true;
+
+            if (!nama) {
+               errorName.textContent = "Mohon diisi!";
+               isValid = false;
+            } else if (nama.length > 40) {
+               errorName.textContent = "Maksimal 40 karakter!";
+               isValid = false;
+            }
+
+            if (!via) {
+               errorVia.textContent = "Mohon dipilih!";
+               isValid = false;
+            }
+            
+            if (!nominal) {
+               errorNominal.textContent = "Mohon diisi!";
+               isValid = false;
+            }
+
+            if (!isValid) return; // Stop jika ada error
+
+            // 🔹 Gunakan push agar data punya ID unik
+            const dataRef = push(ref(db, "confirmation/"));
+            set(dataRef, { nama, via, nominal, timestamp: serverTimestamp() })
+               .then(() => {
+                  document.getElementById("confirmname").value = "";
+                  document.getElementById("confirmvia").value = "";
+                  document.getElementById("confirmnominal").value = "";
+               })
+               .catch(err => alert("Gagal menyimpan data: " + err));
+         };
+
         </script>
 
         <script>
@@ -924,5 +1165,120 @@
                counter.textContent = comment.length;
             });
          </script>
+         <script>
+            const imgContainer = document.getElementById("img-cont");
+    
+            // Function to loop the images
+            function moveImages() {
+                // Get the first image
+                const firstImage = imgContainer.firstElementChild;
+    
+                // Move the container up by the height of the first image
+                imgContainer.style.transform = "translateY(-" + firstImage.offsetHeight + "px)";
+    
+                // Wait for the transition to end
+                setTimeout(() => {
+                    // Move the first image to the bottom
+                    imgContainer.appendChild(firstImage);
+    
+                    // Reset the position to allow smooth transition
+                    imgContainer.style.transition = "none";
+                    imgContainer.style.transform = "translateY(0)";
+    
+                    // Re-enable the transition for the next cycle
+                    setTimeout(() => {
+                        imgContainer.style.transition = "transform 1s ease-in-out";
+                    }, 100);
+                }, 1000); // 1000 ms adalah durasi waktu yang sama dengan di transition
+            }
+    
+            // Start the image loop
+            setInterval(moveImages, 3000); // Gambar akan bergerak setiap 2 detik
+        </script>
+        <script>
+         let currentPageStory = 1;
+         const pages = document.querySelectorAll('.page');
+
+
+         document.querySelector(".next").addEventListener("click", () => {
+            let pages = document.querySelectorAll(".page");
+            let topPage = pages[0]; // Halaman yang akan di-flip
+            let nextPage = pages[1]; // Halaman berikutnya
+            
+            topPage.classList.add("flipped"); // Tambahkan efek flip
+            nextPage.classList.add('animate__animated', 'animate__fadeIn');
+
+            nextPage.style.zIndex = pages.length + 1; // Halaman berikutnya muncul di atas
+        
+            currentPageStory = nextPage.getAttribute('data-attr');
+
+            setTimeout(() => {
+                topPage.classList.remove("flipped"); // Hapus efek flip setelah animasi selesai
+        
+                // Delay 200ms sebelum mengubah z-index
+                setTimeout(() => {
+                    topPage.style.zIndex = -1; // Kirim halaman yang lama ke paling belakang
+                    document.querySelector(".book").appendChild(topPage); // Pindahkan ke paling belakang
+        
+                    // Perbarui z-index untuk semua halaman
+                    document.querySelectorAll(".page").forEach((page, index) => {
+                        page.style.zIndex = pages.length - index;
+                    });
+                    
+                    pages.forEach((item) => {
+                     item.classList.remove('animate__animated', 'animate__fadeIn');
+                     });
+                     
+                }, 200); // Delay 200ms sebelum mengubah z-index
+
+            }, 800); // Sesuaikan dengan durasi animasi flip
+
+            updateNextButton();
+        });
+        
+        
+        
+        document.querySelector(".prev").addEventListener("click", () => {
+            let pages = document.querySelectorAll(".page");
+            let lastPage = pages[pages.length - 1];
+        
+            lastPage.classList.add("flipped-back"); // Tambahkan efek flip ke belakang
+        
+            currentPageStory = lastPage.getAttribute('data-attr');
+
+            setTimeout(() => {
+                lastPage.classList.remove("flipped-back"); // Hapus efek flip setelah animasi selesai
+                lastPage.style.zIndex = pages.length + 1; // Tarik ke depan
+        
+                document.querySelector(".book").prepend(lastPage); // Pindahkan elemen ke paling depan
+        
+                // Perbarui z-index untuk semua halaman
+                document.querySelectorAll(".page").forEach((page, index) => {
+                    page.style.zIndex = pages.length - index;
+                });
+
+            }, 800); // Sesuaikan dengan durasi animasi
+
+            updateNextButton();
+        });
+
+        function updateNextButton() {
+            if(currentPageStory == 1) {
+               document.getElementById('prev-story').style.display = 'none';
+            } else if(currentPageStory == 3) {
+               document.getElementById('next-story').style.display = 'none';
+            } else {
+               setTimeout(() => {
+                  const pages = document.querySelectorAll('.btn-story');
+   
+                  pages.forEach((item) => {
+                     item.style.display = 'flex';
+                  });
+               }, 300);
+            }
+        }
+
+        window.onload = updateNextButton();
+     </script>
    </body>
 </html>
