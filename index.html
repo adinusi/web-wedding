@@ -27,7 +27,7 @@
       <link rel="stylesheet" href="./themes.css?v=2.2">
       <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="https://example.com/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
 
     <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap" rel="stylesheet">
       <style>
@@ -198,7 +198,7 @@
                                     </div>
                                  </div>
                               </li>
-                              <li class="nusi_slide" style="display: none;">
+                              <!-- <li class="nusi_slide" style="display: none;">
                                  <div class="container-mobile" style="background-image: url('./bg.png?v=1.2');">
                                     <div class="frame"><img src="./frame-tr.png" alt="frame" style="z-index:9999"  class="frame-tr animate__animated animate__fadeInTopRight animate__slower"> <img src="./frame-bl.png" style="z-index:9999"  alt="frame" class="frame-bl animate__animated animate__fadeInBottomLeft animate__slower"></div>
                                     <div class="book">
@@ -228,7 +228,7 @@
                                    </button>
                                
                                  </div>
-                              </li>
+                              </li> -->
                               <li class="nusi_slide" style="display: none;">
                                  <div class="container-mobile" style="background-image: url('./bg.png?v=1.2');">
                                     <div class="frame"><img src="./frame-tr.png" alt="frame" class="frame-tr animate__animated animate__fadeInTopRight animate__slower"> <img src="./frame-bl.png" alt="frame" class="frame-bl animate__animated animate__fadeInBottomLeft animate__slower"></div>
@@ -237,11 +237,11 @@
                                           <div class="editable text-center mb-4 animate__animated animate__fadeInDown animate__slower charmonman-regular">Salam sejahtera,<br>Dengan hormat, melalui undangan ini kami bermaksud mengajak <span class="guestNameSlot"></span> untuk berkenan menghadiri acara pernikahan kami:</div>
                                           <div class="text-center mb-4 animate__animated animate__fadeInLeft animate__slower">
                                              <div class="editable font-latin color-accent h4 mb-2 ">Adytia Nugraha Siregar, ST</div>
-                                             <div class="editable charmonman-regular">Putra Kedua dari Bapak H. Siregar<br> Ibu D. Lumban Tobing, S.Pd (+)<br><br>~ dengan ~</div>
+                                             <div class="editable charmonman-regular">Putra Kedua <br>dari<br>H. Siregar & D. Lumban Tobing, S.Pd (+)<br><br>~ dengan ~</div>
                                           </div>
                                           <div class="text-center animate__animated animate__fadeInRight animate__slower">
                                              <div class="editable font-latin color-accent h4 mb-2">Mawar Alvionita Juliati Purba, S.Th</div>
-                                             <div class="editable charmonman-regular">Putri Kedua dari Bapak St. A.F. Purba<br> Ibu V. Br Manalu<br></div>
+                                             <div class="editable charmonman-regular">Putri Kedua <br>dari<br> St. A.F. Purba & V. Br Manalu<br></div>
                                           </div>
                                        </div>
                                     </div>
@@ -393,7 +393,7 @@
                                                    <div>
                                                       <div class="form-group mb-2">
                                                          <label for="inputname" class="small mb-1">Nama</label> 
-                                                         <input id="inputname" type="text" value="" placeholder="Nama" disabled readonly required="required" class="form-control guestNameSlot"> <!---->
+                                                         <input id="inputname" type="text" value="" placeholder="Nama" required="required" class="form-control guestNameSlot"> <!---->
                                                          <span id="error-name" style="color: rgb(255, 86, 86); font-size: 12px;"></span><br>
                                                       </div>
                                                       <!----> <!----> <!----> <!---->
@@ -524,7 +524,23 @@
                                        <div class="text-center" style="width: 100%;">
                                           <div class="font-latin color-accent h4 mb-2 editable animate__animated animate__fadeInDown animate__slower">Kirim Hadiah</div>
                                           <div class="editable mb-4 animate__animated animate__fadeInDown animate__slower charmonman-regular">Doa Restu <span class="guestNameSlot"></span> merupakan karunia yang sangat berarti bagi kami. Namun jika <span class="guestNameSlot"></span> ingin memberi hadiah kami sediakan fitur berikut</div>
-                                          <div style="display: flex;"><button class="btn-gift btn btn-block btn-primary rounded-pill animate__animated animate__fadeInUp animate__slow" style="max-width: 150px; margin: auto;">? Hadiah</button> <button class="btn-gift btn btn-block btn-primary rounded-pill animate__animated animate__fadeInUp animate__slow" style="max-width: 150px; margin: auto;">? Kirim Kado</button></div>
+                                          <div style="display: flex;">
+                                             <button class="btn-gift btn btn-block btn-primary rounded-pill animate__animated animate__fadeInUp animate__slow" style="max-width: 150px; margin: auto;display:flex;align-items:center;gap:8px;justify-content:center;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:18px">
+                                                   <path d="M10.464 8.746c.227-.18.497-.311.786-.394v2.795a2.252 2.252 0 0 1-.786-.393c-.394-.313-.546-.681-.546-1.004 0-.323.152-.691.546-1.004ZM12.75 15.662v-2.824c.347.085.664.228.921.421.427.32.579.686.579.991 0 .305-.152.671-.579.991a2.534 2.534 0 0 1-.921.42Z" />
+                                                   <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v.816a3.836 3.836 0 0 0-1.72.756c-.712.566-1.112 1.35-1.112 2.178 0 .829.4 1.612 1.113 2.178.502.4 1.102.647 1.719.756v2.978a2.536 2.536 0 0 1-.921-.421l-.879-.66a.75.75 0 0 0-.9 1.2l.879.66c.533.4 1.169.645 1.821.75V18a.75.75 0 0 0 1.5 0v-.81a4.124 4.124 0 0 0 1.821-.749c.745-.559 1.179-1.344 1.179-2.191 0-.847-.434-1.632-1.179-2.191a4.122 4.122 0 0 0-1.821-.75V8.354c.29.082.559.213.786.393l.415.33a.75.75 0 0 0 .933-1.175l-.415-.33a3.836 3.836 0 0 0-1.719-.755V6Z" clip-rule="evenodd" />
+                                                </svg>
+                                                 <span>Hadiah</span>
+                                                </button> 
+                                             <button class="btn-gift btn btn-block btn-primary rounded-pill animate__animated animate__fadeInUp animate__slow" style="max-width: 150px; margin: auto;display:flex;align-items:center;gap:8px;justify-content:center;">
+                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:18px">
+                                                   <path d="M9.375 3a1.875 1.875 0 0 0 0 3.75h1.875v4.5H3.375A1.875 1.875 0 0 1 1.5 9.375v-.75c0-1.036.84-1.875 1.875-1.875h3.193A3.375 3.375 0 0 1 12 2.753a3.375 3.375 0 0 1 5.432 3.997h3.943c1.035 0 1.875.84 1.875 1.875v.75c0 1.036-.84 1.875-1.875 1.875H12.75v-4.5h1.875a1.875 1.875 0 1 0-1.875-1.875V6.75h-1.5V4.875C11.25 3.839 10.41 3 9.375 3ZM11.25 12.75H3v6.75a2.25 2.25 0 0 0 2.25 2.25h6v-9ZM12.75 12.75v9h6.75a2.25 2.25 0 0 0 2.25-2.25v-6.75h-9Z" />
+                                                </svg>
+                                                <span>
+                                                   Kirim Kado
+                                                </span>
+                                             </button>
+                                          </div>
                                           <div class="gift-container mt-3 px-2 py-4 rounded animate__animated animate__zoomIn animate__slow charmonman-regular" style="display: none;">
                                             <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
                                                 <div style="height: 60px; width: 100px; overflow: hidden; border-radius: 10px;background:white;border:1px solid #9EB996;padding:3px;display:grid;place-items:center;">
@@ -586,7 +602,7 @@
                                           <div class="gift-container mt-3 p-4 rounded animate__animated animate__zoomIn animate__slow" style="display: none;">
                                              <div class="text-center mb-2">
                                                 <div class="editable font-weight-bold h5 color-accent mb-2 font-latin">Kirim Kado</div>
-                                                <div class="editable mb-0 charmonman-regular"><span class="guestNameSlot"></span> dapat mengirim kado ke:<br>Perumahan AA Blok G, No. 4 Cikampak, Kab. Labuhanbatu Selatan, Kec. Torgamba, Sumatera Utara, 21464</div>
+                                                <div class="editable mb-0 charmonman-regular"><span class="guestNameSlot" style="font-weight: bold;;"></span> dapat mengirim kado ke:<br><br>Perumahan AA Blok G, No. 4 Cikampak, Kab. Labuhanbatu Selatan, Kec. Torgamba, Sumatera Utara, 21464</div>
                                              </div>
                                           </div>
                                        </div>
@@ -656,14 +672,14 @@
                                              <div class="editable quotes mb-3 animate__animated animate__fadeInDown animate__slower">Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila <span class="guestNameSlot"></span>, berkenan hadir dan memberikan do'a restu kepada kedua mempelai.</div>
                                              <div class="editable font-italic animate__animated animate__fadeInDown animate__slow">Hormat Kami Yang Mengundang</div>
                                              <div class="editable font-accent h4 color-accent animate__animated animate__fadeInDown animate__slow">Adytia & Mawar</div>
-                                             <!-- <div class="watermark-placeholder mt-5">
+                                             <div class="watermark-placeholder mt-5" style="margin-top:40px;">
                                                 <div id="waterMark" class="mt-5" style="display: inherit;">
                                                    <div class="wm-music mt-3 text-center animate__animated animate__fadeInUp animate__slower animate__delay-1s" style="font-size: 60%;">
-                                                      <div style="opacity: 0.5;"><strong>Music:</strong></div>
-                                                      <div style="opacity: 0.5;">You Raise me up - Josh Groban</div>
+                                                      <div style="opacity: 0.5;"><strong>Design & Created By:</strong></div>
+                                                      <div style="opacity: 0.5;font-weight:medium;font-size:12px;;">Adytia Nugraha Siregar</div>
                                                    </div>
                                                 </div>
-                                             </div> -->
+                                             </div>
                                           </div>
                                        </div>
                                     </div>
@@ -687,12 +703,12 @@
                               </svg>
                               <span>Quotes</span>
                            </li>
-                           <li class="nusi_menu_item" style="max-width: 82.8px;">
+                           <!-- <li class="nusi_menu_item" style="max-width: 82.8px;">
                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
                                  <path fill="currentColor" d="M11.25 4.533A9.707 9.707 0 0 0 6 3a9.735 9.735 0 0 0-3.25.555.75.75 0 0 0-.5.707v14.25a.75.75 0 0 0 1 .707A8.237 8.237 0 0 1 6 18.75c1.995 0 3.823.707 5.25 1.886V4.533ZM12.75 20.636A8.214 8.214 0 0 1 18 18.75c.966 0 1.89.166 2.75.47a.75.75 0 0 0 1-.708V4.262a.75.75 0 0 0-.5-.707A9.735 9.735 0 0 0 18 3a9.707 9.707 0 0 0-5.25 1.533v16.103Z" />
                                </svg>
                               <span>Story</span>
-                           </li>
+                           </li> -->
                            <li class="nusi_menu_item" style="max-width: 82.8px;">
                               <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                  <path opacity=".4" d="M11.776 21.837a36.258 36.258 0 0 1-6.328-4.957 12.668 12.668 0 0 1-3.03-4.805C1.278 8.535 2.603 4.49 6.3 3.288A6.282 6.282 0 0 1 12.007 4.3a6.291 6.291 0 0 1 5.706-1.012c3.697 1.201 5.03 5.247 3.893 8.787a12.67 12.67 0 0 1-3.013 4.805 36.58 36.58 0 0 1-6.328 4.957l-.25.163-.24-.163Z" fill="currentColor"></path>
@@ -917,6 +933,42 @@
 
             // Ambil nama dari parameter URL
             const guestName = getQueryParam('name');
+
+            if(!guestName || guestName.length < 1) {
+               document.querySelector('#app')?.remove();
+               const body = document.querySelector('body');
+
+               body.style.backgroundColor = '#fff';
+               body.innerHTML = `<div style="display:grid;place-content:center;justify-content:center;height:100%;;">
+                     <div style="margin:0 auto;text-align:center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:200px;color:#f5c242;margin:0 auto;">
+                           <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-2.625 6c-.54 0-.828.419-.936.634a1.96 1.96 0 0 0-.189.866c0 .298.059.605.189.866.108.215.395.634.936.634.54 0 .828-.419.936-.634.13-.26.189-.568.189-.866 0-.298-.059-.605-.189-.866-.108-.215-.395-.634-.936-.634Zm4.314.634c.108-.215.395-.634.936-.634.54 0 .828.419.936.634.13.26.189.568.189.866 0 .298-.059.605-.189.866-.108.215-.395.634-.936.634-.54 0-.828-.419-.936-.634a1.96 1.96 0 0 1-.189-.866c0-.298.059-.605.189-.866Zm-4.34 7.964a.75.75 0 0 1-1.061-1.06 5.236 5.236 0 0 1 3.73-1.538 5.236 5.236 0 0 1 3.695 1.538.75.75 0 1 1-1.061 1.06 3.736 3.736 0 0 0-2.639-1.098 3.736 3.736 0 0 0-2.664 1.098Z" clip-rule="evenodd" />
+                        </svg>
+      
+                     </div>
+                     <p style="text-align:center;font-weigh:600;font-size:20px;">
+                        <br>Jangan di akses<br>Kamu itu gak di undang.<br><br>
+                     </p>
+                  </div>`
+
+               
+               setTimeout(() => {
+                    body.innerHTML = `<div style="display:grid;place-content:center;justify-content:center;height:100%;;">
+                     <div style="margin:0 auto;text-align:center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"  style="width:200px;color:#f5c242;margin:0 auto;">
+                           <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-2.625 6c-.54 0-.828.419-.936.634a1.96 1.96 0 0 0-.189.866c0 .298.059.605.189.866.108.215.395.634.936.634.54 0 .828-.419.936-.634.13-.26.189-.568.189-.866 0-.298-.059-.605-.189-.866-.108-.215-.395-.634-.936-.634Zm4.314.634c.108-.215.395-.634.936-.634.54 0 .828.419.936.634.13.26.189.568.189.866 0 .298-.059.605-.189.866-.108.215-.395.634-.936.634-.54 0-.828-.419-.936-.634a1.96 1.96 0 0 1-.189-.866c0-.298.059-.605.189-.866Zm2.023 6.828a.75.75 0 1 0-1.06-1.06 3.75 3.75 0 0 1-5.304 0 .75.75 0 0 0-1.06 1.06 5.25 5.25 0 0 0 7.424 0Z" clip-rule="evenodd" />
+                        </svg>
+                     </div>
+                     <div>
+                        <p style="text-align:center;">
+                           <span style="font-size:25px;">Ahhkk elah, kamu liatin terus</span> <br> <br> Sudah deh aku kasih tau kamu buat tambahin parameter di url nya dengan nama kamu <br> <span style="font-weight:bold;">"?name=[Nama Kamu]" &#x21d2; "?name=Merry"</span>.
+                           <br>Mungkin aku nya lupa, atau gak punya kontak kamu. <br><br>
+                        </p>
+                        <p style="text-align:center;font-size:25px;font-weight:bold;">No hard feelings, keep smiling!</p>
+                     </div>
+                     </div>`;
+               }, 5000);
+            }
 
             // Tampilkan nama tamu jika ada
             const guestNameSlot = document.querySelectorAll(".guestNameSlot");
