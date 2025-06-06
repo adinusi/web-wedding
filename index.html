@@ -236,12 +236,12 @@
                                        <div style="width: 100%;">
                                           <div class="editable text-center mb-4 animate__animated animate__fadeInDown animate__slower charmonman-regular">Salam sejahtera,<br>Dengan hormat, melalui undangan ini kami bermaksud mengajak <span class="guestNameSlot"></span> untuk berkenan menghadiri acara pernikahan kami:</div>
                                           <div class="text-center mb-4 animate__animated animate__fadeInLeft animate__slower">
-                                             <div class="editable font-latin color-accent h4 mb-2 ">Adytia Nugraha Siregar, ST</div>
-                                             <div class="editable charmonman-regular">Putra Kedua <br>dari<br>H. Siregar & D. Lumban Tobing, S.Pd (+)<br><br>~ dengan ~</div>
+                                             <div class="editable font-latin color-accent h4 mb-2 " style="font-weight: bold;">Adytia Nugraha Siregar, ST</div>
+                                             <div class="editable charmonman-regular">Putra Kedua dari :<br>H. Siregar & D. Lumban Tobing, S.Pd (+)<br><br>~ dengan ~</div>
                                           </div>
                                           <div class="text-center animate__animated animate__fadeInRight animate__slower">
-                                             <div class="editable font-latin color-accent h4 mb-2">Mawar Alvionita Juliati Purba, S.Th</div>
-                                             <div class="editable charmonman-regular">Putri Kedua <br>dari<br> St. A.F. Purba & V. Br Manalu<br></div>
+                                             <div class="editable font-latin color-accent h4 mb-2" style="font-weight: bold;">Mawar Alvionita Juliati Purba, S.Th</div>
+                                             <div class="editable charmonman-regular">Putri Kedua dari :<br> St. A.F. Purba & V. Br Manalu<br></div>
                                           </div>
                                        </div>
                                     </div>
@@ -381,7 +381,7 @@
                                     <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
                                        <div style="width: 100%;">
                                           <div class="text-center mb-4 animate__animated animate__fadeInDown animate__slower">
-                                             <div class="font-latin color-accent h4 editable">Kirim Ucapan</div>
+                                             <div class="font-latin color-accent h4 editable">RSVP</div>
                                           </div>
                                           <div class="rsvp-placeholder animate__animated animate__fadeInUp animate__slower">
                                              <div class="rsvp-form show">
@@ -498,7 +498,7 @@
                                                      </div>
                                                   </div> -->
                                                </div>
-                                               <div class="pagination" style="display: flex;align-items:center;justify-content:space-between;">
+                                               <div class="pagination" style="display: flex;align-items:center;justify-content:center;gap:12px;">
                                                    <button style="outline:none;background:none;border:none;display:none;" id="prev-btn" disabled>
                                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#3A6941" style="width:24px;">
                                                          <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-4.28 9.22a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72h5.69a.75.75 0 0 0 0-1.5h-5.69l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3Z" clip-rule="evenodd" />
@@ -603,6 +603,9 @@
                                              <div class="text-center mb-2">
                                                 <div class="editable font-weight-bold h5 color-accent mb-2 font-latin">Kirim Kado</div>
                                                 <div class="editable mb-0 charmonman-regular"><span class="guestNameSlot" style="font-weight: bold;;"></span> dapat mengirim kado ke:<br><br>Perumahan AA Blok G, No. 4 Cikampak, Kab. Labuhanbatu Selatan, Kec. Torgamba, Sumatera Utara, 21464</div>
+                                                <button type="button" data-text="Perumahan AA Blok G, No. 4 Cikampak, Kab. Labuhanbatu Selatan, Kec. Torgamba, Sumatera Utara, 21464" onclick="copyText(event, 'address')" class="btn-maps-link btn btn-primary rounded-pill mb-4 animate__animated animate__fadeInUp animate__slow" style="font-size:12px;margin-top:12px;">
+                                                     Copy Alamat
+                                                </button>
                                              </div>
                                           </div>
                                        </div>
@@ -1147,6 +1150,7 @@
             const dataRef = push(ref(db, "users/"));
             set(dataRef, { nama, kehadiran, comment, timestamp: serverTimestamp() })
                .then(() => {
+                  document.getElementById("inputname").value = "";
                   document.getElementById("inputcomment").value = "";
                   document.getElementById("inputattendance").value = "";
                   document.getElementById("inputcomment").innerText = 0;
